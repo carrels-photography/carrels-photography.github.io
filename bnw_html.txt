@@ -1,0 +1,15 @@
+			<div class="p-item grid-sizer"><a class="venobox" href="images/street/bnw/05_XT201395-1_med.jpg">
+				<img src="images/street/bnw/05_XT201395-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/street/bnw/04_DSCF5454-1_med.jpg">
+				<img src="images/street/bnw/04_DSCF5454-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/street/bnw/03_DSCF5371-2zugeschnitten_med.jpg">
+				<img src="images/street/bnw/03_DSCF5371-2zugeschnitten_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/street/bnw/02_DSCF4248-3_med.jpg">
+				<img src="images/street/bnw/02_DSCF4248-3_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/street/bnw/01_DSCF3980-2zugeschnitten_med.jpg">
+				<img src="images/street/bnw/01_DSCF3980-2zugeschnitten_low.jpg" alt=""/></a></div>
+
