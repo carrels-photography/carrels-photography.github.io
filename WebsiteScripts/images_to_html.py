@@ -12,7 +12,7 @@ def main():
         ["..", "images", "street", "bnw"],
     ]
 
-    git_ignore_string = []
+    git_ignore_string = ["/00foto-colorlib", "/00iview452g"]
     git_cached_string = []
 
     for path_structure in path_structures:

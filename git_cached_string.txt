@@ -39,6 +39,9 @@ git rm --cached images/people/01.jpg
 git rm --cached images/project/03_XT208670-Bearbeitet-3-3.jpg
 git rm --cached images/project/02_XT208675-Bearbeitet-1.jpg
 git rm --cached images/project/01_XT208679-Bearbeitet-3.jpg
+git rm --cached images/urban/25_XT208918-1.jpg
+git rm --cached images/urban/24_XT208910-Bearbeitet-1.jpg
+git rm --cached images/urban/23_XT208907-Bearbeitet-2.jpg
 git rm --cached images/urban/22_XT206535-HDR-1.jpg
 git rm --cached images/urban/21_XT206531-1.jpg
 git rm --cached images/urban/20_XT206525-1.jpg
