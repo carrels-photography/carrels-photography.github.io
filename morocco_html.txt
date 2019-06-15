@@ -1,0 +1,69 @@
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201987-5_med.jpg">
+				<img src="images/morocco/XT201987-5_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201976-1_med.jpg">
+				<img src="images/morocco/XT201976-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201963-3_med.jpg">
+				<img src="images/morocco/XT201963-3_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201732-12_med.jpg">
+				<img src="images/morocco/XT201732-12_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201720-12_med.jpg">
+				<img src="images/morocco/XT201720-12_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201702-12_med.jpg">
+				<img src="images/morocco/XT201702-12_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201672-1_med.jpg">
+				<img src="images/morocco/XT201672-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201607-1_med.jpg">
+				<img src="images/morocco/XT201607-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201563-1_med.jpg">
+				<img src="images/morocco/XT201563-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201475-1_med.jpg">
+				<img src="images/morocco/XT201475-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201473-1_med.jpg">
+				<img src="images/morocco/XT201473-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201277-Bearbeitet-1_med.jpg">
+				<img src="images/morocco/XT201277-Bearbeitet-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201253-1_med.jpg">
+				<img src="images/morocco/XT201253-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201234-1_med.jpg">
+				<img src="images/morocco/XT201234-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT201222-1_med.jpg">
+				<img src="images/morocco/XT201222-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT200950-2_med.jpg">
+				<img src="images/morocco/XT200950-2_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT200869-1_med.jpg">
+				<img src="images/morocco/XT200869-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT200862-1_med.jpg">
+				<img src="images/morocco/XT200862-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT200789-5_med.jpg">
+				<img src="images/morocco/XT200789-5_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT200759-1_med.jpg">
+				<img src="images/morocco/XT200759-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT200745-1_med.jpg">
+				<img src="images/morocco/XT200745-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT200728-1_med.jpg">
+				<img src="images/morocco/XT200728-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/morocco/XT200722-1_med.jpg">
+				<img src="images/morocco/XT200722-1_low.jpg" alt=""/></a></div>
+

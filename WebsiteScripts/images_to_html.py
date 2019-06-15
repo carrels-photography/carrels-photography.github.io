@@ -7,6 +7,7 @@ def main():
         ["..", "images", "nature"],
         ["..", "images", "people"],
         ["..", "images", "project"],
+        ["..", "images", "morocco"],
         ["..", "images", "urban"],
         ["..", "images", "street", "colored"],
         ["..", "images", "street", "bnw"],
