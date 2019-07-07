@@ -11,6 +11,7 @@ def main():
         ["..", "images", "urban"],
         ["..", "images", "street", "colored"],
         ["..", "images", "street", "bnw"],
+        ["..", "images", "kate_jan"],
     ]
 
     git_ignore_string = ["/00foto-colorlib", "/00iview452g"]
