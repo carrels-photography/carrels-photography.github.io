@@ -1,14 +1,32 @@
 			<div class="p-item grid-sizer"><a class="venobox" href="images/people/XT209862-Bearbeitet-2-1_med.jpg">
 				<img src="images/people/XT209862-Bearbeitet-2-1_low.jpg" alt=""/></a></div>
 
+			<div class="p-item grid-sizer"><a class="venobox" href="images/people/XT209728-3_med.jpg">
+				<img src="images/people/XT209728-3_low.jpg" alt=""/></a></div>
+
 			<div class="p-item grid-sizer"><a class="venobox" href="images/people/XT209716-Bearbeitet-3_med.jpg">
 				<img src="images/people/XT209716-Bearbeitet-3_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/people/XT205698-1_med.jpg">
+				<img src="images/people/XT205698-1_low.jpg" alt=""/></a></div>
 
 			<div class="p-item grid-sizer"><a class="venobox" href="images/people/XT202988-Bearbeitet-13_med.jpg">
 				<img src="images/people/XT202988-Bearbeitet-13_low.jpg" alt=""/></a></div>
 
 			<div class="p-item grid-sizer"><a class="venobox" href="images/people/XT202941-Bearbeitet-1_med.jpg">
 				<img src="images/people/XT202941-Bearbeitet-1_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/people/XT202457-4_med.jpg">
+				<img src="images/people/XT202457-4_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/people/XT200208-2_med.jpg">
+				<img src="images/people/XT200208-2_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/people/XT200127-3_med.jpg">
+				<img src="images/people/XT200127-3_low.jpg" alt=""/></a></div>
+
+			<div class="p-item grid-sizer"><a class="venobox" href="images/people/XT200022-1_med.jpg">
+				<img src="images/people/XT200022-1_low.jpg" alt=""/></a></div>
 
 			<div class="p-item grid-sizer"><a class="venobox" href="images/people/16_XT208070-2-edit_med.jpg">
 				<img src="images/people/16_XT208070-2-edit_low.jpg" alt=""/></a></div>

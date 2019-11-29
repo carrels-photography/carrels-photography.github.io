@@ -1,4 +1,11 @@
 /* ------ venobox.css --------*/
+.venobox{
+            framewidth: 1100px;
+            frameheight: 900px;
+            border: 6px;
+            bordercolor: #ba7c36;
+            numeratio: true;
+          }
 .vbox-overlay *, .vbox-overlay *:before, .vbox-overlay *:after{
     -webkit-backface-visibility: hidden;
     -webkit-box-sizing:border-box;
@@ -140,10 +147,10 @@
 }
 /* ------- inline window ------ */
 .vbox-inline{
-    width: 420px;
-    height: 315px;
-    height: 70vh;
-    padding: 10px;
+    width: 630px;
+    height: 470px;
+    height: 105vh;
+    padding: 15px;
     background: #fff;
     margin: 0 auto;
     overflow: auto;
