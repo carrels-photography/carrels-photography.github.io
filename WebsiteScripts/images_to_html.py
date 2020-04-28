@@ -3,15 +3,18 @@ from os import walk
 
 
 def main():
+    # path_structures = [
+    #     ["..", "images", "nature"],
+    #     ["..", "images", "people"],
+    #     ["..", "images", "project"],
+    #     ["..", "images", "morocco"],
+    #     ["..", "images", "urban"],
+    #     ["..", "images", "street", "colored"],
+    #     ["..", "images", "street", "bnw"],
+    #     ["..", "images", "kate_jan"],
+    # ]
     path_structures = [
-        ["..", "images", "nature"],
-        ["..", "images", "people"],
-        ["..", "images", "project"],
-        ["..", "images", "morocco"],
-        ["..", "images", "urban"],
-        ["..", "images", "street", "colored"],
-        ["..", "images", "street", "bnw"],
-        ["..", "images", "kate_jan"],
+        ["..", "images", "temp_new_upload"]
     ]
 
     git_ignore_string = ["/00foto-colorlib", "/00iview452g"]
@@ -58,13 +61,13 @@ def main():
                     git_ignore_string.append("%s/%s.jpg" %(directory2, filename))
                     git_cached_string.append("git rm --cached %s/%s.jpg" %(directory2, filename))
 
-        with open(os.path.join("..", ".gitignore"), 'w') as f:
-            for item in git_ignore_string:
-                f.write("%s\n" % item)
-
-        with open(os.path.join("..", "git_cached_string.txt"), 'w') as f:
-            for item in git_cached_string:
-                f.write("%s\n" % item)
+        # with open(os.path.join("..", ".gitignore"), 'w') as f:
+        #     for item in git_ignore_string:
+        #         f.write("%s\n" % item)
+        #
+        # with open(os.path.join("..", "git_cached_string.txt"), 'w') as f:
+        #     for item in git_cached_string:
+        #         f.write("%s\n" % item)
 
 
 def getfiles(dirpath):
