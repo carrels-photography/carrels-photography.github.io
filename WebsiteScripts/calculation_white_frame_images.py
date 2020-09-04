@@ -3,8 +3,8 @@ def main():
 
     ratio_to_add_on_longer_side = 5 / 100
 
-    width_input = 3936
-    height_input = 2624
+    width_input = 3483
+    height_input = 1000
 
     target_aspect_ratio = 1 / 1  # Breite / Hoehe
 
