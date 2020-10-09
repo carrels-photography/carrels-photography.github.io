@@ -14,7 +14,7 @@ def main():
     #     ["..", "images", "kate_jan"],
     # ]
     path_structures = [
-        ["..", "images", "temp_new_upload"]
+        ["..", "images", "kate_jan"]
     ]
 
     git_ignore_string = ["/00foto-colorlib", "/00iview452g"]
