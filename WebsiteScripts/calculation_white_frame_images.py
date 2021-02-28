@@ -1,12 +1,12 @@
 def main():
 
 
-    ratio_to_add_on_longer_side = 5 / 100
+    ratio_to_add_on_longer_side = 0 #5 / 100
 
-    width_input = 3070
-    height_input = 1000
+    width_input = 2624
+    height_input = 3936
 
-    target_aspect_ratio = 1 / 1  # Breite / Hoehe
+    target_aspect_ratio = 834/700 # 1 / 1  # Breite / Hoehe
 
     if height_input > width_input:
 
