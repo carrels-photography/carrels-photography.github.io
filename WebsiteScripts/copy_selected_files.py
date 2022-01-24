@@ -3,9 +3,9 @@ from shutil import copyfile
 import shutil
 
 # C:\Users\ACarr\Desktop\200912_Hochzeit_Lydia_Nico\04_Paarfotos\02_Steg\Andere\jpg_ohne_edit
-MAINFODLER = "C:\\Users\\ACarr\\Desktop\\200912_Hochzeit_Lydia_Nico"
+MAINFODLER = "C:\\Users\\ACarr\\Desktop\\210827_Tina_Jess_Hochzeit"
 #MAINFODLER = "C:\\Users\\ACarr\\Desktop\\200831_ReseTim_Rafael_Leipzig\\Sony"
-SUBFOLDER = "\\02_Floß\\03_NachTrauung"
+SUBFOLDER = "\\00_Hinfahrt"
 #SUBFOLDER = ""
 PREFIX = "_DSC"
 SUFFIX = ".ARW"
@@ -24,7 +24,7 @@ else:
     TARGET_RELPATH = "\\Auswahl_Alex\\raw"
     #TARGET_RELPATH = "\\selection_raw"
 
-SELECTION_FILE_RELPATH = "\\Auswahl_Alex\\auswahl.txt"
+SELECTION_FILE_RELPATH = "\\Auswahl_Alex\\Auswahl.txt"
 #SELECTION_FILE_RELPATH = "\\auswahl.txt"
 
 
@@ -43,9 +43,11 @@ def main():
        os.mkdir(target_path)
 
    #with open(os.path.join(MAINFODLER, SUBFOLDER, SELECTION_FILE_RELPATH)) as fp:
+   print(MAINFODLER + SUBFOLDER +SELECTION_FILE_RELPATH)
    with open(MAINFODLER + SUBFOLDER +SELECTION_FILE_RELPATH) as fp:
         Lines = fp.readlines()
         for line in Lines:
+            print(line)
 
             line_content = line.strip()
 

@@ -1,12 +1,13 @@
 def main():
 
+    # schwarter rahmen: ins ps bild -- arbeitsfläche vergrößern --> 0.5 % der längsten kante auf h und b drauf.
+    ratio_to_add_on_longer_side = 5/100 #5 / 100
 
-    ratio_to_add_on_longer_side = 0 #5 / 100
+    width_input = 6030
+    height_input = 2000
 
-    width_input = 2624
-    height_input = 3936
 
-    target_aspect_ratio = 834/700 # 1 / 1  # Breite / Hoehe
+    target_aspect_ratio = 1 # 1 / 1  # Breite / Hoehe
 
     if height_input > width_input:
 
