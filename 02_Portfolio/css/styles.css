@@ -169,10 +169,6 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .main-section .grid-sizer a{ display: block; transition: transform 0.5s; /* Animation */}
 
-.main-section .grid-sizer:hover a{
-  transform: scale(1.02); /* (Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
 
 /* SCROLLBAR */
 	
