@@ -41,19 +41,9 @@
 		
 		<ul class="main-menu" id="main-menu">
 			<li><a href="index.html">Home</a></li>
-			<li class="drop-down"><a href="#!">Portfolio<i class="ion-arrow-down-b"></i></a>
-				<ul class="drop-down-menu drop-down-inner">
-					<li><a href="munich.html">munich</a></li>
-					<li><a href="outdoor.html">outdoor</a></li>
-					<li><a href="nepal.html">nepal '24</a></li>
-					<li><a href="newyork.html">new york '24</a></li>
-					<li><a href="norway_skitouring.html">skitouring norway '23 & '24</a></li>
-					<li><a href="brandenburg_houseboat.html">houseboat brandenburg '23</a></li>
-					<li><a href="norddeutschland_camper.html">northern germany '23</a></li>	
-					<li><a href="jordan.html">jordan '22</a></li>
-					<li><a href="morocco.html">morocco '19</a></li>
-					<li><a href="others.html">odds and ends</a></li>
-				</ul>
+			<li class="drop-down">
+				<a href="#!">Portfolio<i class="ion-arrow-down-b"></i></a>
+				<ul id="portfolio-menu-placeholder" class="drop-down-menu drop-down-inner"></ul>
 			</li>
 			<li><a href="mailto:carrelsphotography@icloud.com">Contact</a></li>
 			<li><a href="https://www.instagram.com/carrels_photography/"><i class="ion-social-instagram-outline"></i></a></li>
@@ -135,6 +125,25 @@ derartige Inhalte umgehend entfernen.</p>
 	
 	
 	<script src="common-js/scripts.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			fetch("portfolio-menu.html")
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById("portfolio-menu-placeholder").innerHTML = data;
+		
+					// Klick-Logik für Dropdown
+					document.querySelectorAll('.drop-down > a').forEach((el) => {
+						el.addEventListener('click', function(e) {
+							e.preventDefault();
+							const submenu = this.nextElementSibling;
+							submenu.classList.toggle('open');
+						});
+					});
+				});
+		});
+			</script>
 	
 </body>
 </html>
