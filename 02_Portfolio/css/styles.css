@@ -205,3 +205,10 @@ footer .show-thumb-btn:hover:after{ background: #333;
 footer .social-icons{ float: right; }
 
 footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20px; }
+
+.p-grid-isotope a:focus,
+.p-grid-isotope a:active,
+.p-grid-isotope a:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
