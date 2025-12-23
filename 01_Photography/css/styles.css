@@ -225,7 +225,7 @@ footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20p
 
 
 	.swiper-container {
-		height: calc(100vh - 192px); }
+		height: calc(100vh - 120px); }
 		.swiper-container .swiper-slide .image-wrap {
 		  display: block;
 		  overflow: hidden;
