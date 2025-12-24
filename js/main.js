@@ -234,61 +234,59 @@ jQuery(document).ready(function($) {
 
 	};
 	siteDatePicker();
-
-	var swiperSetting = function() {
-		var mySwiper = new Swiper ('.swiper-container', {
-	    // Optional parameters
-	    // direction: 'horizontal',
-	    // loop: true,
-
-	    // If we need pagination
-	    pagination: {
-	      el: '.swiper-pagination',
-	    },
-
-	    // Navigation arrows
-	    navigation: {
-	      nextEl: '.swiper-button-next',
-	      prevEl: '.swiper-button-prev',
-	    },
-	    mousewheel: {
-		  	invert: false,
-		  	forceToAxis: true,
-		  	releaseOnEdges: true,
-		  },
-
-		  // direction: 'vertical',
-		  freeMode: true,
-      // slidesPerView: 'auto',
-      spaceBetween: 30,
-      mousewheel: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-
-	    // And if we need scrollbar
-	    // scrollbar: {
-	    //   el: '.swiper-scrollbar',
-	    // },
-
-	    slidesPerView: 3,
-			breakpoints: {
-				668: {
-					slidesPerView: 1
+	var swiperSetting = function () {
+		var mySwiper = null;
+	  
+		function initOrDestroySwiper() {
+		  var isMobile = window.matchMedia("(max-width: 768px)").matches;
+	  
+		  // Mobile: Swiper aus
+		  if (isMobile) {
+			if (mySwiper) {
+			  mySwiper.destroy(true, true);
+			  mySwiper = null;
+			}
+			return;
+		  }
+	  
+		  // Desktop: Swiper an (nur wenn noch nicht initialisiert)
+		  if (!mySwiper) {
+			mySwiper = new Swiper(".swiper-container", {
+				freeMode: true,
+				spaceBetween: 20,
+			  
+				pagination: {
+				  el: ".swiper-pagination",
+				  clickable: true,
 				},
-				1024: {
-					slidesPerView: 2 
-				}
-			},
-			// paginationClickable: false,
-			spaceBetween: 20,
-			// freeMode: true,
-			// grabCursor: true,
-			// mousewheelControl: true
-
-	  })
-	}
-	swiperSetting();
+			  
+				navigation: {
+				  nextEl: ".swiper-button-next",
+				  prevEl: ".swiper-button-prev",
+				},
+			  
+				mousewheel: {
+				  forceToAxis: true,
+				  releaseOnEdges: true,
+				},
+			  
+				slidesPerView: 3,
+				breakpoints: {
+				  0:    { slidesPerView: 1 }, // mobile
+				  668:  { slidesPerView: 1 }, // tablet
+				  1024: { slidesPerView: 1 }, // ipad landscape
+				  1280: { slidesPerView: 2 }, // small desktop
+				  1600: { slidesPerView: 3 }, // large desktop
+				},
+			  });
+		  }
+		}
+	  
+		// initial + bei resize
+		initOrDestroySwiper();
+		window.addEventListener("resize", initOrDestroySwiper);
+	  };
+	  
+	  swiperSetting();
 
 });

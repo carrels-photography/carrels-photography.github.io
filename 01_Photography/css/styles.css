@@ -309,3 +309,39 @@ footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20p
 	  .swiper-pagination-bullet-active {
 		opacity: 1;
 		background: #20c997; }
+
+
+
+		@media (max-width: 768px) {
+			/* Container darf wachsen und normal scrollen */
+			.swiper-container.images-carousel {
+			  height: auto !important;
+			}
+		  
+			/* Swiper Layout neutralisieren */
+			.swiper-container.images-carousel .swiper-wrapper {
+			  display: block !important;
+			  transform: none !important; /* falls Swiper inline transform setzt */
+			}
+		  
+			/* Jeder Slide als Block untereinander */
+			.swiper-container.images-carousel .swiper-slide {
+			  width: 100% !important;
+			  height: auto !important;
+			  margin-bottom: 16px;
+			}
+		  
+			/* Bildkartenhöhe für Mobile */
+			.swiper-container.images-carousel .image-wrap {
+			  position: relative !important;
+			  height: 60vh;              /* oder z.B. 320px */
+			}
+		  
+			/* Navigation ausblenden */
+			.swiper-button-prev,
+			.swiper-button-next,
+			.swiper-pagination,
+			.swiper-scrollbar {
+			  display: none !important;
+			}
+		  }
