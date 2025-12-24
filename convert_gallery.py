@@ -68,7 +68,7 @@ def main():
     input_html = Path(sys.argv[1])
     output_html = Path(sys.argv[2]) if len(sys.argv) >= 3 else None
 
-    placeholder = "images/logos/logo_hp_home.png"  # change if you want another placeholder
+    placeholder = "images/logos/white_square.png"  # change if you want another placeholder
     img_class = "lazy"
 
     html_text = input_html.read_text(encoding="utf-8", errors="ignore")
