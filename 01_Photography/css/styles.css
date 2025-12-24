@@ -363,3 +363,10 @@ footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20p
 	  object-fit: cover;
 	}
   }
+
+
+  /* enable click-to-open dropdown */
+header .main-menu li.drop-down > ul.drop-down-menu.open {
+	display: block;
+	animation: full-opacity-anim .2s forwards;
+  }
