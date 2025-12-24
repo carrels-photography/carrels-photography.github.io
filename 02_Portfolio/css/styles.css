@@ -212,3 +212,10 @@ footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20p
   outline: none;
   box-shadow: none;
 }
+
+/* Prevent stretched images in the isotope grid */
+.p-grid-isotope .p-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
