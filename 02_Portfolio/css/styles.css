@@ -219,3 +219,18 @@ footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20p
 	height: auto;
 	display: block;
   }
+
+/* placeholder is visible */
+.p-grid-isotope img.lazy {
+	opacity: 1;
+	transition: opacity 0.35s ease;
+  }
+  
+  /* when real image is ready, we fade in from 0 -> 1 */
+  .p-grid-isotope img.lazy.is-loading {
+	opacity: 0;
+  }
+  
+  .p-grid-isotope img.lazy.is-loaded {
+	opacity: 1;
+  }
