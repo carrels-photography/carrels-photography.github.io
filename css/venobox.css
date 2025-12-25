@@ -1,10 +1,6 @@
 /* ------ venobox.css --------*/
 .venobox{
-            framewidth: 1100px;
-            frameheight: 900px;
             border: 6px;
-            bordercolor: #ba7c36;
-            numeratio: true;
           }
 .vbox-overlay *, .vbox-overlay *:before, .vbox-overlay *:after{
     -webkit-backface-visibility: hidden;
@@ -34,20 +30,7 @@
 }
 
 /* ----- navigation ----- */
-.vbox-title{
-    width: 100%;
-    height: 40px;
-    float: left;
-    text-align: center;
-    line-height: 28px;
-    font-size: 12px;
-    padding: 6px 40px;
-    overflow: hidden;
-    position: fixed;
-    display: none;
-    left: 0;
-    z-index: 1050;
-}
+
 .vbox-close{
     cursor: pointer;
     position: fixed;
@@ -198,33 +181,9 @@ or at least read this note: http://i.imgur.com/7C0ws9e.gif
 .vbox-open{
     overflow: hidden;
 }
-.vbox-container{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    overflow-scrolling: touch;
-    -webkit-overflow-scrolling: touch;
-    z-index: 20;
-    max-height: 100%;
 
-}
 
-.vbox-content{
-    text-align: center;
-    float: left;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    padding: 20px 10px;
-}
-.vbox-container img{
-    max-width: 100%;
-    height: auto;
-}
+
 .figlio{
     box-shadow: 0 0 12px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     max-width: 100%;
@@ -308,59 +267,38 @@ user-select: none;
     color: #ffffff !important;
   }
 
+  .vbox-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 20;
+    max-height: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;       /* keeps image centered */
+    align-items: center;
 
-/* Move caption below the image */
-.vbox-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .vbox-content {
-    order: 1;
-  }
-  
-  .vbox-title {
-    order: 2;
-    position: static !important;
-    margin-bottom: 12px;
-    text-align: center;
-    font-size: 0.9em;
-    opacity: 0.8;
-    color: #fff;
-  }
+}
 
+  
   .vbox-title{
-    position: fixed !important;
-    bottom: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-  
-    display: inline-block;
-    width: auto;
-    max-width: calc(100vw - 48px);
-  
-    padding: 8px 14px;
-    border-radius: 6px;
-  
-    background: rgba(0,0,0,0.65);
-    color: #fff;
-    font-size: 0.9em;
-    line-height: 1.4;
+    width: 100%;
+    height: 40px;
+    float: left;
     text-align: center;
-  
-    opacity: 0.9;
-    pointer-events: none;
-    order: 2;
-    bottom: 16px !important;
-    font-weight: 300;
-    letter-spacing: 0.3px;  }
-
-/* Make container a column and put title after content */
-.vbox-container{
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center;       /* keeps image centered */
-  align-items: center;
+    line-height: 28px;
+    font-size: 12px;
+    padding: 6px 40px;
+    overflow: hidden;
+    position: fixed;
+    display: none;
+    left: 0;
+    z-index: 1050;
 }
 
 .vbox-content{
@@ -368,9 +306,7 @@ user-select: none;
   width: 100%;
 }
 
-.vbox-title{
-  order: 2;
-}
+
 
 /* Hide caption if it ends up empty */
 .vbox-title:empty {
@@ -382,7 +318,7 @@ user-select: none;
     position: fixed !important;
   
     top: auto !important;
-    bottom: 16px !important;
+    bottom: 50px !important;
   
     left: 50% !important;
     transform: translateX(-50%);
