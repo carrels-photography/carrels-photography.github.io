@@ -518,26 +518,7 @@
 
     <script src="js/scripts.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("portfolio-menu.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("portfolio-menu-placeholder").innerHTML =
-              data;
-
-            // Klick-Logik für Dropdown
-            document.querySelectorAll(".drop-down > a").forEach((el) => {
-              el.addEventListener("click", function (e) {
-                e.preventDefault();
-                const submenu = this.nextElementSibling;
-                submenu.classList.toggle("open");
-              });
-            });
-          });
-      });
-    </script>
-
+    <script src="js/menu.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const grid = document.querySelector(".p-grid-isotope");
