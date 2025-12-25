@@ -454,41 +454,6 @@
 
     <script src="js/menu.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const grid = document.querySelector(".p-grid-isotope");
-        const imgs = document.querySelectorAll("img.lazy[data-src]");
-
-        const io = new IntersectionObserver(
-          (entries, obs) => {
-            entries.forEach((e) => {
-              if (!e.isIntersecting) return;
-              const img = e.target;
-
-              img.addEventListener(
-                "load",
-                () => {
-                  if (
-                    window.jQuery &&
-                    window.jQuery.fn &&
-                    window.jQuery.fn.isotope
-                  ) {
-                    window.jQuery(grid).isotope("layout");
-                  }
-                },
-                { once: true }
-              );
-
-              img.src = img.dataset.src;
-              img.removeAttribute("data-src");
-              obs.unobserve(img);
-            });
-          },
-          { rootMargin: "2500px 0px" }
-        );
-
-        imgs.forEach((img) => io.observe(img));
-      });
-    </script>
+    <script src="js/lazy-grid.js"></script>
   </body>
 </html>
