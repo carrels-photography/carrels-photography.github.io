@@ -142,7 +142,7 @@
 			framewidth: '50%',        // default: ''
 			frameheight: '',          // default: ''
 			border: '0px',            // default: '0'
-			bgcolor: '#5dff5e',       // default: '#fff'
+			bgcolor: 'transparent' ,   // default: '#fff'
 			titleattr: 'data-title',  // default: 'title'
 			numeratio: false,         // default: false
 			infinigall: true          // default: false
