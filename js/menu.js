@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!placeholder) return; // page doesn't have the menu
   
     // load menu HTML
-    const res = await fetch("portfolio-menu.html", { cache: "no-cache" });
+    const res = await fetch("../portfolio-menu.html", { cache: "no-cache" });
     placeholder.innerHTML = await res.text();
   
     // dropdown toggle (works even after fetch)
