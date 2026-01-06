@@ -218,3 +218,13 @@ footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20p
 	height: auto;
 	display: block;
   }
+
+  /* ==================================================
+   Base layout – applies to ALL screen widths
+================================================== */
+
+.main-section{
+	height: calc(100vh - 60px); /* header height */
+	overflow-y: auto;
+	overflow-x: hidden;
+  }

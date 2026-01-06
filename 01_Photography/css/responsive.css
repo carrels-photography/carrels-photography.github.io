@@ -180,3 +180,18 @@
 	
 	
 }
+
+/* lock scrollbar color everywhere */
+* {
+	scrollbar-color: #CCC3BD transparent !important;
+  }
+  
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb:hover,
+  ::-webkit-scrollbar-thumb:active {
+	background-color: #CCC3BD !important;
+  }
+  
+  ::-webkit-scrollbar-track {
+	background: transparent !important;
+  }
