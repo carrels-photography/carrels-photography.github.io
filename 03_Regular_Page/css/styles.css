@@ -55,7 +55,7 @@ a, button{ display: inline-block; text-decoration: none; color: inherit; line-he
 
 a:focus, a:active, a:hover,
 button:focus, button:active, button:hover,
-a b.light-color:hover{ text-decoration: none; color: #37D583; }
+a b.light-color:hover{ text-decoration: none; color: #CCC3BD; }
 
 b{ font-weight: 600; }
 
