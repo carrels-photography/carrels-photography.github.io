@@ -265,6 +265,13 @@ footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20p
 		  .swiper-container .swiper-slide .image-wrap:hover:before {
 			background: rgba(0, 0, 0, 0.4);
 			content: ""; }
+			/* Darken on hover (desktop) + tap (mobile) + focus (accessibility) */
+.swiper-container .swiper-slide .image-wrap:hover:before,
+.swiper-container .swiper-slide .image-wrap:active:before,
+.swiper-container .swiper-slide .image-wrap:focus-within:before{
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+}
 		.swiper-container .btn-outline-white {
 		  border-color: #fff;
 		  color: #fff;
