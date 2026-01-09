@@ -223,8 +223,28 @@ footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20p
    Base layout – applies to ALL screen widths
 ================================================== */
 
+/* gallery area */
 .main-section{
-	height: calc(100vh - 60px); /* header height */
+	height: calc(100vh - var(--header-h) - var(--footer-h));
 	overflow-y: auto;
 	overflow-x: hidden;
+  }
+  
+  footer{
+	position: fixed;         /* instead of absolute */
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	padding: 0 50px;
+	box-sizing: border-box;
+	background: #fff;        /* so it doesn't visually overlay */
+	z-index: 100;
+  }
+
+  /* Hide footer completely on mobile */
+@media (max-width: 767px){
+	footer{
+	  display: none !important;
+	}
   }
