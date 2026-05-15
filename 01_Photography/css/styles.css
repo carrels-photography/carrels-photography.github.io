@@ -376,3 +376,16 @@ header .main-menu li.drop-down > ul.drop-down-menu.open {
 	display: block;
 	animation: full-opacity-anim .2s forwards;
   }
+
+
+
+
+  header .main-menu li.drop-down.is-open > ul.drop-down-menu {
+	display: block;
+  }
+  
+  header ul.main-menu > li > .portfolio-toggle {
+	height: 100%;
+	line-height: 60px;
+	padding: 0 10px;
+  }

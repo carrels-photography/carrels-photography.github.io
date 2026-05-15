@@ -210,3 +210,15 @@ footer .show-thumb-btn:hover:after{ background: #333;
 footer .social-icons{ float: right; }
 
 footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20px; }
+
+
+
+header .main-menu li.drop-down.is-open > ul.drop-down-menu {
+	display: block;
+  }
+  
+  header ul.main-menu > li > .portfolio-toggle {
+	height: 100%;
+	line-height: 60px;
+	padding: 0 10px;
+  }
