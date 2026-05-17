@@ -139,16 +139,16 @@ header .main-menu li.drop-down{ position: relative; text-align: left; }
 header .main-menu li.drop-down > ul.drop-down-menu{ display: none; position: absolute; top: 60px; 
 	left: 0; min-width: 180px; box-shadow: 0px 3px 10px rgba(0,0,0,.3); background: #fff; }
 
-header .main-menu li.drop-down > ul.drop-down-menu li{ display: block; border-top: 1px solid #ddd; }
+header .main-menu li.drop-down > ul.drop-down-menu li{border-top: 1px solid #ddd; }
 
-header .main-menu li.drop-down > ul.drop-down-menu li > a{ display: block; padding: 17px 20px; }
+header .main-menu li.drop-down > ul.drop-down-menu li > a{ padding: 17px 20px; }
 
 header .main-menu li i{margin-left: 10px; }
 
 
 /* DROPDOWN HOVER */
 
-header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block; 
+header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{
 	animation: full-opacity-anim .2s forwards; }
 
 
@@ -251,9 +251,10 @@ footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20p
 
 
   header .main-menu li.drop-down.is-open > ul.drop-down-menu {
-	display: block;
-  }
+
+	display: block !important;
   
+  }
   header ul.main-menu > li > .portfolio-toggle {
 	height: 100%;
 	line-height: 60px;
@@ -299,4 +300,175 @@ footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20p
   
 	}
   
+  }
+
+  .portfolio-nav {
+	position: relative;
+  }
+  
+  .portfolio-toggle {
+	background: none;
+	border: 0;
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 10px;
+  }
+  
+  .portfolio-menu {
+	display: none !important;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	z-index: 9999;
+	min-width: 230px;
+	margin: 0;
+	padding: 8px 0;
+	list-style: none;
+	background: #fff;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  }
+  
+  
+  .portfolio-nav.is-open > .portfolio-menu {
+	display: block !important;
+  }
+  
+  .portfolio-menu li {
+	display: block;
+  }
+  
+  .portfolio-menu li a {
+	display: block;
+	padding: 7px 14px;
+	line-height: 1.25;
+	white-space: nowrap;
+  }
+  @media only screen and (max-width: 767px) {
+	.portfolio-toggle {
+	  padding-top: 22px;
+	  padding-bottom: 22px;
+	  padding-left: 15px !important;
+	  padding-right: 15px !important;
+  
+	  width: 100%;
+	  text-align: left;
+	  border-top: 1px solid #eee;
+	}
+  }
+
+	.portfolio-menu {
+	  position: static;
+	  box-shadow: none;
+	  min-width: 0;
+	  padding-left: 15px;
+	}
+  }
+
+  .portfolio-toggle {
+
+	text-align: left;
+  
+  }
+  
+  .portfolio-menu {
+  
+	text-align: left;
+  
+  }
+  
+  .portfolio-menu li a {
+  
+	text-align: left;
+  
+  }
+
+  .portfolio-menu {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+  }
+
+  @media only screen and (max-width: 767px) {
+	.portfolio-menu {
+	  margin: 0 !important;
+	  padding: 0 0 0 15px !important;
+	}
+  }
+
+  @media only screen and (max-width: 767px) {
+
+	.portfolio-nav {
+	  padding: 0 !important;
+	  margin: 0 !important;
+	}
+  
+	.portfolio-menu {
+	  margin: 0 !important;
+	  padding: 0 0 0 20px !important;
+	  border-top: 0 !important;
+	}
+  
+	.portfolio-menu li:first-child {
+	  margin-top: -8px;
+	}
+  
+  }
+
+  .portfolio-toggle {
+	color: inherit;
+  }
+  
+  .portfolio-toggle:focus,
+
+  
+  .portfolio-toggle::-moz-focus-inner {
+	border: 0;
+  }
+
+  .portfolio-toggle.menu-open {
+	opacity: 1 !important;
+  }
+
+  header {
+	z-index: 10000;
+  }
+  
+  .portfolio-nav {
+	z-index: 10001;
+  }
+  
+  .portfolio-menu {
+	z-index: 10002;
+  }
+
+  header .portfolio-menu {
+	display: none !important;
+  }
+  
+  header .portfolio-nav.is-open > .portfolio-menu {
+	display: block !important;
+  }
+
+  @media only screen and (min-width: 768px) {
+	header .portfolio-nav {
+	  position: relative;
+	}
+  
+	header .portfolio-menu {
+	  position: absolute !important;
+	  top: 60px;
+	  left: 0;
+	  display: none !important;
+	  min-width: 230px;
+	  margin: 0;
+	  padding: 8px 0;
+	  background: #fff;
+	  z-index: 10002;
+	}
+  
+	header .portfolio-nav.is-open > .portfolio-menu {
+	  display: block !important;
+	}
   }

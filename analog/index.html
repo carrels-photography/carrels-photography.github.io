@@ -34,12 +34,20 @@
 
       <ul class="main-menu" id="main-menu">
         <li><a href="/">Home</a></li>
-        <li class="drop-down">
-          <a href="#!">Portfolio<i class="ion-arrow-down-b"></i></a>
+        <li class="portfolio-nav">
+          <button
+            type="button"
+            class="portfolio-toggle"
+            aria-expanded="false"
+          >
+            Portfolio <i class="ion-arrow-down-b"></i>
+          </button>
+        
           <ul
             id="portfolio-menu-placeholder"
-            class="drop-down-menu drop-down-inner"
+            class="portfolio-menu"
           ></ul>
+        </li>
         </li>
         <li><a href="mailto:carrelsphotography@icloud.com">Contact</a></li>
         <li>
@@ -77,7 +85,6 @@
           </a>
         </div>
 
-
         <div class="p-item grid-sizer landscape">
           <a
             class="venobox"
@@ -96,7 +103,6 @@
             />
           </a>
         </div>
-
 
         <div class="p-item grid-sizer portrait">
           <a
@@ -173,9 +179,6 @@
             />
           </a>
         </div>
-
-    
-    
         <div class="p-item grid-sizer landscape">
           <a
             class="venobox"
@@ -195,8 +198,6 @@
           </a>
         </div>
 
-
-
         <div class="p-item grid-sizer portrait">
           <a
             class="venobox"
@@ -215,7 +216,6 @@
             />
           </a>
         </div>
-
 
         <div class="p-item grid-sizer portrait">
           <a
@@ -293,7 +293,6 @@
           </a>
         </div>
 
-
         <div class="p-item grid-sizer landscape">
           <a
             class="venobox"
@@ -312,7 +311,6 @@
             />
           </a>
         </div>
-
 
         <div class="p-item grid-sizer landscape">
           <a
@@ -389,7 +387,6 @@
             />
           </a>
         </div>
-
 
         <div class="p-item grid-sizer landscape">
           <a
@@ -486,7 +483,6 @@
           </a>
         </div>
 
-
         <div class="p-item grid-sizer landscape">
           <a
             class="venobox"
@@ -524,7 +520,6 @@
             />
           </a>
         </div>
-
 
         <div class="p-item grid-sizer portrait">
           <a
@@ -1526,6 +1521,7 @@
     <script src="../js/scripts.js"></script>
 
     <script src="../js/menu.js"></script>
+
 
     <script src="../js/lazy-grid.js"></script>
   </body>

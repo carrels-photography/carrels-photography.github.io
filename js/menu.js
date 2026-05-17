@@ -1,9 +1,30 @@
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", () => {
   const mainMenu = document.querySelector("#main-menu");
   const menuIcon = document.querySelector(".menu-nav-icon");
-  const placeholder = document.getElementById("portfolio-menu-placeholder");
+  const portfolioNav = document.querySelector(".portfolio-nav");
+  const portfolioToggle = document.querySelector(".portfolio-toggle");
+  const placeholder = document.querySelector("#portfolio-menu-placeholder");
 
-  // Load portfolio submenu
+  menuIcon?.addEventListener("click", (e) => {
+    e.preventDefault();
+    mainMenu?.classList.toggle("visible-menu");
+  });
+
+  portfolioToggle?.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const isOpen = portfolioNav.classList.toggle("is-open");
+    portfolioToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!portfolioNav?.contains(e.target)) {
+      portfolioNav?.classList.remove("is-open");
+      portfolioToggle?.setAttribute("aria-expanded", "false");
+    }
+  });
+
   if (placeholder) {
     const pathPrefix =
       window.location.pathname === "/" ||
@@ -11,39 +32,24 @@ document.addEventListener("DOMContentLoaded", async () => {
         ? ""
         : "../";
 
-    const res = await fetch(`${pathPrefix}portfolio-menu.html`, {
-      cache: "no-cache",
-    });
-
-    placeholder.innerHTML = await res.text();
+    fetch(`${pathPrefix}portfolio-menu.html`, { cache: "no-cache" })
+      .then((res) => res.text())
+      .then((html) => {
+        placeholder.innerHTML = html;
+      });
   }
+});
 
-  const dropdown = document.querySelector(".drop-down");
-  const toggle = document.querySelector(".portfolio-toggle");
+portfolioToggle?.addEventListener("click", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
 
-  // Hamburger menu
-  if (menuIcon && mainMenu) {
-    menuIcon.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
+  const isOpen = portfolioNav.classList.toggle("is-open");
 
-      mainMenu.classList.toggle("visible-menu");
+  portfolioToggle.setAttribute(
+    "aria-expanded",
+    isOpen ? "true" : "false"
+  );
 
-      if (dropdown && toggle) {
-        dropdown.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
-      }
-    });
-  }
-
-  // Portfolio submenu
-  if (toggle && dropdown) {
-    toggle.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-
-      const isOpen = dropdown.classList.toggle("is-open");
-      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    });
-  }
+  portfolioToggle.classList.toggle("menu-open", isOpen);
 });
