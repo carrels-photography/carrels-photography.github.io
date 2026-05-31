@@ -669,4 +669,14 @@ header .main-menu li.drop-down > ul.drop-down-menu.open {
 	  padding: 8px 0;
 	  background: #fff;
 	  z-index: 10002;
-	}
+	}}
+
+	/* Remove Chrome's blue click focus box on the homepage Portfolio button */
+
+.portfolio-toggle:focus {
+
+	outline: none !important;
+  
+	box-shadow: none !important;
+  
+  }
