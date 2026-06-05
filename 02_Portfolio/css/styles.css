@@ -430,19 +430,19 @@ footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20p
   .portfolio-toggle.menu-open {
 	opacity: 1 !important;
   }
-
   header {
-	z-index: 10000;
+
+	z-index: 100;
+  
   }
   
-  .portfolio-nav {
-	z-index: 10001;
-  }
+  .portfolio-nav,
   
   .portfolio-menu {
-	z-index: 10002;
+  
+	z-index: 101;
+  
   }
-
   header .portfolio-menu {
 	display: none !important;
   }
