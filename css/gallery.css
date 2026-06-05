@@ -1,0 +1,94 @@
+/* css/gallery.css */
+
+.main-section {
+    height: calc(100vh - var(--header-h) - var(--footer-h));
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .main-section::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .main-section .grid-sizer {
+    padding: 7px;
+    width: 20%;
+  }
+  
+  .main-section .grid-sizer a {
+    display: block;
+    transition: transform 0.5s;
+  }
+  
+  .p-grid-isotope a:focus,
+  .p-grid-isotope a:active,
+  .p-grid-isotope a:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .p-grid-isotope .p-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .portfolio-heading {
+    text-align: center;
+    padding: 40px 20px 20px;
+  }
+  
+  .portfolio-heading h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  
+  .portfolio-heading p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+  }
+  
+  /* Keep the gallery lightbox above the normal site nav */
+  .vbox-overlay {
+    z-index: 1040;
+  }
+  
+  .vbox-close,
+  .vbox-next,
+  .vbox-prev {
+    z-index: 1050;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .main-section .grid-sizer {
+      width: 25%;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    body {
+      padding-bottom: 0;
+    }
+  
+    .main-section {
+      height: calc(100vh - var(--header-h));
+    }
+  
+    .main-section .grid-sizer {
+      width: 33.333%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .main-section .grid-sizer {
+      width: 50%;
+    }
+  
+    .portfolio-heading h1 {
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+  }
