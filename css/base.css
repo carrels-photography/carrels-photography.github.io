@@ -5,7 +5,7 @@
    ========================================================= */
 
    :root {
-    --page-x: 50px;
+    --page-x: 10px;
     --header-h: 60px;
     --footer-h: 60px;
   
@@ -306,32 +306,24 @@
   .main-section {
     width: 100%;
   }
-  
-  /* =========================================================
-     Mobile
-     ========================================================= */
-  
+
   @media only screen and (max-width: 767px) {
-    :root {
-      --page-x: 20px;
-    }
-  
-    body {
-      padding: var(--header-h) var(--page-x) 0;
-    }
-  
-    header {
-      padding: 0 var(--page-x);
-    }
-  
-    header .logo {
-      height: 34px;
-      margin: 13px 0;
-    }
-  
     .menu-nav-icon {
-      display: inline-block;
+      display: block;
       float: right;
+      position: relative;
+      z-index: 1002;
+      width: 44px;
+      height: var(--header-h);
+      line-height: var(--header-h);
+      margin: 0;
+      text-align: right;
+      cursor: pointer;
+      pointer-events: auto;
+    }
+  
+    .menu-nav-icon i {
+      line-height: var(--header-h);
     }
   
     header .main-menu {
@@ -340,14 +332,19 @@
       top: var(--header-h);
       left: 0;
       right: 0;
+      z-index: 1001;
   
       float: none;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  
       text-align: left;
       background: var(--bg);
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
     }
   
-    header .main-menu.visible {
+    header .main-menu.visible-menu {
       display: block;
     }
   
@@ -365,10 +362,6 @@
       border-top: 1px solid #eee;
     }
   
-    .portfolio-nav {
-      display: block;
-    }
-  
     .portfolio-menu {
       position: static;
       min-width: 0;
@@ -380,19 +373,5 @@
   
     .portfolio-menu li a {
       padding: 9px var(--page-x);
-    }
-  
-    footer {
-      display: none !important;
-    }
-  }
-  
-  /* =========================================================
-     Small mobile
-     ========================================================= */
-  
-  @media only screen and (max-width: 480px) {
-    :root {
-      --page-x: 15px;
     }
   }
