@@ -1,16 +1,26 @@
 /* css/gallery.css */
 
+/* Desktop gallery: inner scroll is okay */
+
 .main-section {
+
     height: calc(100vh - var(--header-h) - var(--footer-h));
+  
     position: relative;
+  
     overflow-y: auto;
+  
     overflow-x: hidden;
+  
+    margin: 0 -7px;
+  
   }
   
   .main-section::-webkit-scrollbar {
-    width: 0;
-  }
   
+    width: 0;
+  
+  }
   .main-section .grid-sizer {
     padding: 7px;
     width: 20%;
@@ -76,23 +86,50 @@
     .main-section {
       height: calc(100vh - var(--header-h));
     }
-/* Mobile galleries: one image per row */
-@media only screen and (max-width: 767px) {
-    body {
-      padding-bottom: 0;
-    }
-  
-    .main-section {
-      height: calc(100vh - var(--header-h));
-    }
-  
-    .main-section .grid-sizer {
-      width: 100%;
-    }
-  }
-  
-    .portfolio-heading h1 {
-      font-size: 22px;
-      letter-spacing: 1px;
-    }
-  }
+    @media only screen and (max-width: 767px) {
+
+        body {
+      
+          min-height: 100vh;
+      
+          height: auto;
+      
+          overflow-y: auto;
+      
+          padding-bottom: 0;
+      
+        }
+      
+        header {
+      
+          position: relative;
+      
+        }
+      
+        .main-section {
+      
+          height: auto;
+      
+          min-height: 0;
+      
+          overflow: visible;
+      
+          margin: 0;
+      
+        }
+      
+        .portfolio-heading {
+      
+          padding: 24px 0 18px;
+      
+        }
+      
+        .main-section .grid-sizer {
+      
+          width: 100%;
+      
+          padding: 0 0 16px;
+      
+        }
+      
+      }}
