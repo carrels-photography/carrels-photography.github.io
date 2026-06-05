@@ -38,7 +38,7 @@
   body {
     min-height: 100vh;
     margin: 0;
-    padding: var(--header-h) var(--page-x) var(--footer-h);
+    padding: var(--header-h) var(--page-x) 0;
     font-family: "Poppins", serif;
     font-size: 15px;
     font-weight: 400;
@@ -274,27 +274,19 @@
      Footer
      ========================================================= */
   
-  footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  
-    height: var(--footer-h);
-    padding: 0 var(--page-x);
-  
-    overflow: hidden;
-    text-align: center;
-    background: var(--bg);
-    z-index: var(--nav-z);
-  }
-  
-  footer .copyright {
-    float: left;
-    font-size: 0.95em;
-    line-height: var(--footer-h);
-  }
-  
+     footer {
+        position: static;
+      
+        height: var(--footer-h);
+        padding: 0 var(--page-x);
+        margin-left: calc(-1 * var(--page-x));
+        margin-right: calc(-1 * var(--page-x));
+      
+        overflow: hidden;
+        text-align: center;
+        background: var(--bg);
+      }
+
   /* =========================================================
      Shared layout helpers
      ========================================================= */
