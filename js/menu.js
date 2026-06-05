@@ -14,14 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     e.stopPropagation();
 
-    const isOpen = portfolioNav.classList.toggle("is-open");
+    const isOpen = portfolioNav?.classList.toggle("is-open");
+
     portfolioToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    portfolioToggle.classList.toggle("menu-open", isOpen);
   });
 
   document.addEventListener("click", (e) => {
     if (!portfolioNav?.contains(e.target)) {
       portfolioNav?.classList.remove("is-open");
       portfolioToggle?.setAttribute("aria-expanded", "false");
+      portfolioToggle?.classList.remove("menu-open");
     }
   });
 
@@ -38,18 +41,4 @@ document.addEventListener("DOMContentLoaded", () => {
         placeholder.innerHTML = html;
       });
   }
-});
-
-portfolioToggle?.addEventListener("click", (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-
-  const isOpen = portfolioNav.classList.toggle("is-open");
-
-  portfolioToggle.setAttribute(
-    "aria-expanded",
-    isOpen ? "true" : "false"
-  );
-
-  portfolioToggle.classList.toggle("menu-open", isOpen);
 });
