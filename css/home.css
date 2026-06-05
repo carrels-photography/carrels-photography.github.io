@@ -136,3 +136,42 @@
       object-fit: cover;
     }
   }
+
+  /* Homepage carousel arrows */
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 44px;
+  height: 44px;
+  margin-top: -22px;
+  color: #fff;
+  z-index: 10;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-family: "Ionicons";
+  font-size: 34px;
+  color: #fff;
+  line-height: 44px;
+}
+
+.swiper-button-prev::after {
+  content: "\f3d2"; /* ion-ios-arrow-back */
+}
+
+.swiper-button-next::after {
+  content: "\f3d3"; /* ion-ios-arrow-forward */
+}
+
+.swiper-button-prev {
+  left: 20px;
+  right: auto;
+  background-image: none !important;
+}
+
+.swiper-button-next {
+  right: 20px;
+  left: auto;
+  background-image: none !important;
+}
