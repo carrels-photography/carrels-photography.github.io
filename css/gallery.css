@@ -83,8 +83,16 @@
     }
   
     header {
-      position: relative;
-    }
+
+        position: relative;
+    
+        /* Prevent double side padding on mobile gallery pages */
+    
+        margin-left: calc(-1 * var(--page-x));
+    
+        margin-right: calc(-1 * var(--page-x));
+    
+      }
   
     .main-section {
       height: auto;
