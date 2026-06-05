@@ -71,65 +71,43 @@
   .vbox-prev {
     z-index: 1050;
   }
-  
-  @media only screen and (max-width: 991px) {
-    .main-section .grid-sizer {
-      width: 25%;
-    }
-  }
-  
   @media only screen and (max-width: 767px) {
     body {
+      min-height: 100vh;
+      height: auto;
+      overflow-y: auto;
+  
+      /* Header is now in normal flow, so remove the reserved top padding */
+      padding-top: 0;
       padding-bottom: 0;
     }
   
-    .main-section {
-      height: calc(100vh - var(--header-h));
+    header {
+      position: relative;
     }
-    @media only screen and (max-width: 767px) {
-
-        body {
-      
-          min-height: 100vh;
-      
-          height: auto;
-      
-          overflow-y: auto;
-      
-          padding-bottom: 0;
-      
-        }
-      
-        header {
-      
-          position: relative;
-      
-        }
-      
-        .main-section {
-      
-          height: auto;
-      
-          min-height: 0;
-      
-          overflow: visible;
-      
-          margin: 0;
-      
-        }
-      
-        .portfolio-heading {
-      
-          padding: 24px 0 18px;
-      
-        }
-      
-        .main-section .grid-sizer {
-      
-          width: 100%;
-      
-          padding: 0 0 16px;
-      
-        }
-      
-      }}
+  
+    .main-section {
+      height: auto;
+      min-height: 0;
+      overflow: visible;
+      margin: 0;
+    }
+  
+    .portfolio-heading {
+      padding: 10px 0 14px;
+    }
+  
+    .portfolio-heading h1 {
+      font-size: 24px;
+      letter-spacing: 1.5px;
+    }
+  
+    .portfolio-heading p {
+      font-size: 12px;
+    }
+  
+    .main-section .grid-sizer {
+      width: 100%;
+      padding: 0 0 16px;
+    }
+  }
