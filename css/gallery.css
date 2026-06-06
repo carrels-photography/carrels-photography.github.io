@@ -1,7 +1,7 @@
 /* css/gallery.css */
 
 :root {
-  --gallery-gap: 7px;
+  --gallery-gap: 5px;
 }
 
 /* Do not compensate here */
@@ -41,6 +41,8 @@
 
 /* Tablet: 3 columns */
 @media only screen and (max-width: 900px) {
+
+
   .main-section .grid-sizer,
   .p-grid-isotope .p-item {
     width: 33.3333%;
@@ -95,7 +97,7 @@
 /* Small phone: 1 column, smaller gap */
 @media only screen and (max-width: 420px) {
   :root {
-    --gallery-gap: 4px;
+    --gallery-gap: 5px;
   }
 
   .main-section .grid-sizer,
