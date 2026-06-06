@@ -41,4 +41,56 @@ document.addEventListener("DOMContentLoaded", () => {
         placeholder.innerHTML = html;
       });
   }
+
+
+  /* Gallery pages only: auto-hide header on scroll down, reveal on scroll up */
+const isGalleryPage = document.querySelector(".p-grid-isotope");
+
+if (isGalleryPage) {
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+  const hideThreshold = 10;
+  const showThreshold = 4;
+  const topOffset = 10;
+
+  const updateGalleryHeader = () => {
+    const currentScrollY = window.scrollY;
+    const delta = currentScrollY - lastScrollY;
+
+    /* Always show header near the top */
+    if (currentScrollY <= topOffset) {
+      document.body.classList.remove("gallery-header-hidden");
+    }
+
+    /* Do not hide header while mobile menu is open */
+    else if (document.querySelector(".main-menu.visible-menu")) {
+      document.body.classList.remove("gallery-header-hidden");
+    }
+
+    /* Hide when scrolling down */
+    else if (delta > hideThreshold) {
+      document.body.classList.add("gallery-header-hidden");
+    }
+
+    /* Reveal quickly when scrolling up */
+    else if (delta < -showThreshold) {
+      document.body.classList.remove("gallery-header-hidden");
+    }
+
+    lastScrollY = currentScrollY;
+    ticking = false;
+  };
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateGalleryHeader);
+        ticking = true;
+      }
+    },
+    { passive: true }
+  );
+}
+  
 });

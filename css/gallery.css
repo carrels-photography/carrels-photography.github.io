@@ -151,3 +151,41 @@
 .vbox-prev {
   z-index: 1050;
 }
+
+/* Gallery pages only: hide header when scrolling down, reveal when scrolling up */
+
+body {
+  padding-top: var(--header-h);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: var(--page-x);
+  right: var(--page-x);
+  height: var(--header-h);
+  z-index: 1000;
+  background: var(--bg);
+  transform: translateY(0);
+  transition: transform 0.25s ease;
+  will-change: transform;
+}
+
+body.gallery-header-hidden header {
+  transform: translateY(calc(-1 * var(--header-h)));
+}
+
+/* On mobile, keep header full-width like before */
+@media only screen and (max-width: 767px) {
+  body {
+    padding-top: var(--header-h);
+  }
+
+  header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
