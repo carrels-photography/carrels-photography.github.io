@@ -208,9 +208,20 @@ body.gallery-header-hidden header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
+    justify-content: center;
     width: 100%;
-    margin: 3rem 0;
+    margin: 3rem auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#password-container input {
+    width: 140px;
+    box-sizing: border-box;
+}
+
+#password-container button {
+    margin-top: 0.75rem;
 }
 
 #password-container input {
