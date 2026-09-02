@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet" />
@@ -54,8 +55,54 @@
         <p>Bad Wiessee | 29.08.2026</p>
     </section>
 
+    <form id="password-container" onsubmit="event.preventDefault(); checkPassword();">
+
+        <input id="password" type="password" placeholder="Password" autofocus>
+
+        <button type="submit">Open gallery</button>
+
+    </form>
+
+    <script>
+        const expectedHash =
+
+            "3fc4b0424e83fd2d44fb47c748cf368336424bf2db91992ebc1919f73070270f";
+
+        async function sha256(text) {
+
+            const data = new TextEncoder().encode(text);
+
+            const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+
+            return Array.from(new Uint8Array(hashBuffer))
+
+            .map(b => b.toString(16).padStart(2, "0"))
+
+            .join("");
+
+        }
+
+        async function checkPassword() {
+
+            const password = document.getElementById("password").value;
+
+            const hash = await sha256(password);
+
+            if (hash === expectedHash) {
+                document.getElementById("password-container").remove();
+                document.getElementById("gallery").style.display = "block";
+
+            } else {
+
+                alert("Wrong password");
+
+            }
+
+        }
+    </script>
+
     <section class="main-section">
-        <div class="p-grid-isotope">
+        <div id="gallery" class="p-grid-isotope" style="display:none;">
             <div class="p-item grid-sizer landscape">
                 <a class="venobox" href="images/L1060310_med.jpg">
                     <img class="lazy" src="../images/logos/white_square.png" data-src="images/L1060310_med_q80.jpg" width="1731" height="1154" alt="" loading="lazy" decoding="async" />
